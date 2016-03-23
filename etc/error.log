@@ -1,0 +1,7 @@
+2016/03/22 22:37:41 [error] 4795#0: *1 open() "/home/box/web/public/uploads/1.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /uploads/1.jpg HTTP/1.1", host: "localhost"
+2016/03/22 22:41:02 [error] 4869#0: *1 open() "/home/box/web/public/uploads/1.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /uploads/1.jpg HTTP/1.1", host: "localhost"
+2016/03/22 22:42:03 [error] 4927#0: *1 open() "/home/box/web/uploads/uploads/1.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /uploads/1.jpg HTTP/1.1", host: "localhost"
+2016/03/22 22:45:08 [error] 5111#0: *1 open() "/home/box/web/public/uploads/1.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /uploads/1.jpg HTTP/1.1", host: "localhost"
+2016/03/22 22:46:24 [error] 5111#0: *3 open() "/home/box/web/public/uploads/1.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /uploads/1.jpg HTTP/1.1", host: "localhost"
+2016/03/22 22:49:37 [error] 5223#0: *1 open() "/home/box/web/uploads/uploads/1.jpg" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /uploads/1.jpg HTTP/1.1", host: "localhost"
+2016/03/22 22:52:02 [error] 5223#0: *2 open() "/home/box/web/public/js/my.js" failed (2: No such file or directory), client: 127.0.0.1, server: , request: "HEAD /js/my.js HTTP/1.1", host: "localhost"
