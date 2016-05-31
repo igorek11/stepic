@@ -6,7 +6,7 @@ Examples:
 Function views
     1. Add an import:  from my_app import views
     2. Add a URL to urlpatterns:  url(r'^$', views.home, name='home')
-Class-based views
+Class-based viewsll
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  url(r'^$', Home.as_view(), name='home')
 Including another URLconf
@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from django.conf.urls import patterns
-#from  qa.views import test
+from django.conf.urls import patterns, url
+from  qa  import views
 
-urlpatterns = patterns('qa.views',                                              
-   url(r'^$', 'test'),                                                              
-   url(r'^login/.*$', 'test', name='login'),                                    
-   url(r'^signup/.*', 'test', name='signup'),                                   
-   url(r'^question/\d+/$', 'test'),                
-   url(r'^ask/.*', 'test', name='ask'),                                         
-   url(r'^popular/.*', 'test', name='popular'),                                 
-   url(r'^new/.*', 'test', name='new'),                                         
+urlpatterns = patterns('',                                              
+   url(r'^$', views.question_all, name='question_all'),                                                              
+   url(r'^login/', views.test, name='login'),                                    
+   url(r'^signup/', views.test, name='signup'),                                   
+   url(r'^question/(?P<question_id>\d+)/$', views.question,name='question'),                
+   url(r'^ask/', views.test, name='ask'),                                         
+   url(r'^popular/', views.popular, name='popular'),                                 
+   url(r'^new/', views.test, name='new'),                                         
 ) 
